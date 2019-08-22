@@ -1,7 +1,7 @@
 variable "project" {default = "demos-esd-automation"}
 variable "region" {default = "us-east1"}
 variable "subnetwork" {default = "default"}
-variable "image" {default = "instance-template-1"}
+variable "image" {default = "debian-9-tf-1-14-1-dev20190508-v20190816"}
 variable "infrastructure_name" {default = "Dev"}
 variable = "credentials"{}
 variable "zone" {default = "us-east1-c"}
@@ -38,9 +38,15 @@ resource "google_compute_instance" "default" {
       image = "${var.image}"
     }
   }
-  
+  service_account {
+      email     = "2348479185-compute@developer.gserviceaccount.com"
+	  }
+	
   network_interface {
     subnetwork = "${var.subnetwork}"
     subnetwork_project = "${var.project}"
   }
 }
+  
+
+
