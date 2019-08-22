@@ -5,7 +5,6 @@ variable "image" {default = "debian-9-tf-1-14-1-dev20190508-v20190816"}
 variable "infrastructure_name" {default = "Dev"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
-variable "name" {default = "testone"}
 
 variable "num_nodes" {
   description = "Number of nodes to create"
