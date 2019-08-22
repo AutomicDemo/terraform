@@ -1,10 +1,10 @@
-variable "project" {default = "demo-esd-auto-springer"}
-variable "region" {default = "us-central1"}
-variable "subnetwork" {default = "test-network-sub"}
-variable "image" {default = "ubuntu-1604-xenial-v20190212"}
+variable "project" {default = "demos-esd-automation"}
+variable "region" {default = "us-east1"}
+variable "subnetwork" {default = "default"}
+variable "image" {default = "instance-template-1"}
 variable "infrastructure_name" {default = "Dev"}
 variable = "credentials"{}
-variable "zone" {default = "us-central1-a"}
+variable "zone" {default = "us-east1-c"}
 
 variable "num_nodes" {
   description = "Number of nodes to create"
