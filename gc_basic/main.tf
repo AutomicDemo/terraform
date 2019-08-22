@@ -5,6 +5,7 @@ variable "image" {default = "debian-9-tf-1-14-1-dev20190508-v20190816"}
 variable "infrastructure_name" {default = "Dev"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
+variable "name" {default = "testone"}
 
 variable "num_nodes" {
   description = "Number of nodes to create"
@@ -27,6 +28,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "default" {
+  name         = "${var.name}"
   count        = "${var.num_nodes}"
   project      = "${var.project}"
   zone         = "${var.zone}"
@@ -40,6 +42,7 @@ resource "google_compute_instance" "default" {
   }
   service_account {
       email     = "2348479185-compute@developer.gserviceaccount.com"
+      scope     = "https://www.googleapis.com/auth/cloud-platform"
 	  }
 	
   network_interface {
