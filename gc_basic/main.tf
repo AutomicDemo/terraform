@@ -40,7 +40,7 @@ resource "google_compute_instance" "default" {
   }
   service_account {
       email     = "2348479185-compute@developer.gserviceaccount.com"
-      scopes    = "https://www.googleapis.com/auth/cloud-platform"
+      scopes    = ["cloud-platform"]
 	  }
 	
   network_interface {
