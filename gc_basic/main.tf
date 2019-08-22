@@ -35,7 +35,7 @@ resource "google_compute_instance" "default" {
   machine_type = "f1-micro"
 
   metadata = {
-    ssh-keys = "mike:ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAiKq6YB5jGX+rhbBkZF6Z2G+AEf5f6eedwHulIrvRwlkzjo+jD3WmZOffKG9wnh13AoNegRwHuliIdJGVlyCSr7Kse/xj7lwOOle4kHiqv7QlYKr1EkHJIxffTqw8jqBQ5RMRNQFxVliGuvNx0g2p8rf5pkU+1G3lDWkkNjFlbi2A+WhlELoQ3uNGkR6SWtgqdpEhB6d8pelBFWFFEvVsls/PpCnxZORIIPpcQ1pyXvP9xALLJXRdQTOG1DY6dcl766S4Nn/MWZkhh+q9mbsvGl8P5pzuWKMmWl+mySR9nH7q5SxyPtnlHWnRaQ/w8Pa9o0tTDqD4k9jR5loJvRPL+Q== mike"
+    ssh-keys = "AutomicDemo:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsQ8B6G+bBbYa9o5p2g0QwhPhxm0dmssmUISas7HakO61EV+tiBGQ32AX2uwFqDXutg3x9Xb0iATFUtBWGGKnYVGnw60YyHFW2TtCHB7xoU96BH9cg+BJRcrNFz2t7hoYs5gyRyJTH7xFbjVKAZbcPGS+vJPJvwEr4QQChaXowWZ+YNB+BTcEuLADH7AmPCpweqo1QlCRGIWTzvu4I9fCqUKeu/TRfgQYORT9EycL0TGqy8FkUByoTC4FRD754GRn0+ddF7zAB9EuVE+9LzWEDSkKiBJhvtdTdBN9hRm7gjIKOjYPPrIijfRwbrqxsy25w5hyUPKfZNhmatiGLaEmt AutomicDemo"
   }	
   
   boot_disk {
