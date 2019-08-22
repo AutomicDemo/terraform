@@ -1,7 +1,7 @@
 variable "project" {default = "demos-esd-automation"}
 variable "region" {default = "us-east1"}
 variable "subnetwork" {default = "default"}
-variable "image" {default = "debian-9-tf-1-14-1-dev20190508-v20190816"}
+variable "image" {default = "centos-7-v20190813"}
 variable "infrastructure_name" {default = "Dev"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
