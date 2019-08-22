@@ -27,7 +27,6 @@ provider "google" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "${var.name}"
   count        = "${var.num_nodes}"
   project      = "${var.project}"
   zone         = "${var.zone}"
