@@ -1,8 +1,8 @@
 variable "project" {default = "demos-esd-automation"}
 variable "region" {default = "us-east1"}
 variable "subnetwork" {default = "default"}
-variable "image" {default = "centos-7-v20190813"}
-variable "infrastructure_name" {default = "dev"}
+variable "image" {default = "demo-default-centos7"}
+variable "infrastructure_name" {default = "demo"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
 
@@ -34,10 +34,6 @@ resource "google_compute_instance" "default" {
   name         = "${var.infrastructure_name}-${count.index + 1}-${local.id}"
   machine_type = "f1-micro"
 
-  metadata = {
-    ssh-keys = "AutomicDemo:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsQ8B6G+bBbYa9o5p2g0QwhPhxm0dmssmUISas7HakO61EV+tiBGQ32AX2uwFqDXutg3x9Xb0iATFUtBWGGKnYVGnw60YyHFW2TtCHB7xoU96BH9cg+BJRcrNFz2t7hoYs5gyRyJTH7xFbjVKAZbcPGS+vJPJvwEr4QQChaXowWZ+YNB+BTcEuLADH7AmPCpweqo1QlCRGIWTzvu4I9fCqUKeu/TRfgQYORT9EycL0TGqy8FkUByoTC4FRD754GRn0+ddF7zAB9EuVE+9LzWEDSkKiBJhvtdTdBN9hRm7gjIKOjYPPrIijfRwbrqxsy25w5hyUPKfZNhmatiGLaEmt AutomicDemo"
-  }	
-  
   boot_disk {
     initialize_params {
       image = "${var.image}"
