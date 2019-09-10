@@ -1,7 +1,7 @@
 variable "project" {default = "demos-esd-automation"}
 variable "region" {default = "us-east1"}
 variable "subnetwork" {default = "default"}
-variable "image" {default = "demo-default-centos7"}
+variable "image" {default = "centos-demo-default"}
 variable "infrastructure_name" {default = "demo"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
