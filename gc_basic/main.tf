@@ -5,6 +5,7 @@ variable "image" {default = "centos-demo-default"}
 variable "infrastructure_name" {default = "demo"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
+variable "override" {}
 
 
 variable "num_nodes" {
@@ -31,7 +32,7 @@ resource "google_compute_instance" "default" {
   count        = "${var.num_nodes}"
   project      = "${var.project}"
   zone         = "${var.zone}"
-  name         = "${var.infrastructure_name}-${count.index + 1}-${local.id}"
+  name         = "${var.override}"
   machine_type = "f1-micro"
 
   boot_disk {
