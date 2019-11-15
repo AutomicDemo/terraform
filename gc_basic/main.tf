@@ -6,6 +6,7 @@ variable "infrastructure_name" {default = "demo"}
 variable "credentials" {}
 variable "zone" {default = "us-east1-c"}
 variable "override" {}
+variable "email" {default = "2348479185-compute@developer.gserviceaccount.com"}
 
 
 variable "num_nodes" {
@@ -41,7 +42,7 @@ resource "google_compute_instance" "default" {
     }
   }
   service_account {
-      email     = "2348479185-compute@developer.gserviceaccount.com"
+      email     = "${var.email}"
       scopes    = ["cloud-platform"]
 	  }
 	
