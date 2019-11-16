@@ -39,7 +39,7 @@ resource "google_compute_instance" "default" {
   name         = "${var.override}"
   machine_type = "${var.machine_type}"
   metadata = {
-    sshKeys = "${var.ssh_user}:${(var.public_key)}"
+    ssh-keys = "${var.ssh_user}:${(var.public_key)}"
   }
   boot_disk {
     initialize_params {
