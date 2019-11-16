@@ -9,7 +9,7 @@ variable "machine_type" {default = "f1-micro"}
 variable "override" {}
 variable "email" {default = "1088214523720-compute@developer.gserviceaccount.com"}
 variable "ssh_user" {default = "automic"}
-variable "public_key" {default = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgF8m+KDKerDYe0xoj9042H8DqM7T1Qil0+QxUXTcxLpO/in3wqpphlyVsuGRjFvkeHVCezimMtk6YWW2e2gNv7ugKfj1AoBhwxkcvcEQtCf67RFlGBYMZlzLOXItvAaU2c8eqnTn5lvY14vosNkj4ACVXZJDhNWs3qLLSrEuN3xUsuDgQVE4aNiwfTKYAVahSCFBueL26Zq4tcZaZmfC23YRGOaCvjFeShKqHcQl1nihcHB421oHOGRaZIc4Fwzf6TsRF9+OAA0MLEKIm17VtF6pfxt5rn3sxeVhfBulScH2uhApoB52yY1eDYCQQXmV5uYg8DoTNTFemGQMDHt/2Q== automic"
+variable "public_key" {default = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgF8m+KDKerDYe0xoj9042H8DqM7T1Qil0+QxUXTcxLpO/in3wqpphlyVsuGRjFvkeHVCezimMtk6YWW2e2gNv7ugKfj1AoBhwxkcvcEQtCf67RFlGBYMZlzLOXItvAaU2c8eqnTn5lvY14vosNkj4ACVXZJDhNWs3qLLSrEuN3xUsuDgQVE4aNiwfTKYAVahSCFBueL26Zq4tcZaZmfC23YRGOaCvjFeShKqHcQl1nihcHB421oHOGRaZIc4Fwzf6TsRF9+OAA0MLEKIm17VtF6pfxt5rn3sxeVhfBulScH2uhApoB52yY1eDYCQQXmV5uYg8DoTNTFemGQMDHt/2Q== automic"}
 
 
 variable "num_nodes" {
