@@ -23,7 +23,6 @@ locals {
 
 resource "google_compute_address" "external_ip" {
   name         = "${var.override}"
-  subnetwork   = "${var.subnetwork}"
   address_type = "EXTERNAL"
   region       = "${var.region}"
 }
