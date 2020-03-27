@@ -44,6 +44,7 @@ resource "google_compute_instance" "default" {
   zone         = "${var.zone}"
   name         = "${var.override}"
   machine_type = "${var.machine_type}"
+  tags         = "http"
   metadata = {
     ssh-keys = "${var.ssh_user}:${(var.public_key)}"
   }
